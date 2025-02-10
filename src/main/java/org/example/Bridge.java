@@ -31,17 +31,17 @@ class BlueColor implements Color {
     }
 }
 
-abstract class Share {
+abstract class Shape {
     Color color;
 
-    public Share(Color color) {
+    public Shape(Color color) {
         this.color = color;
     }
 
     abstract void draw();
 }
 
-class Triangle extends Share {
+class Triangle extends Shape {
 
     public Triangle(Color color) {
         super(color);
@@ -54,7 +54,7 @@ class Triangle extends Share {
     }
 }
 
-class Circle extends Share {
+class Circle extends Shape {
 
     public Circle(Color color) {
         super(color);
